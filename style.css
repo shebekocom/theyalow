@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Lucida Sans Italic';
-  src: url('lucidasansitalic.ttf') format('truetype');
+  src: url('assets/lucidasansitalic.ttf') format('truetype');
   font-style: italic;
 }
 
@@ -14,14 +14,14 @@
   font-family: 'Segoe WP';
   font-style: normal;
   font-weight: normal;
-  src: local('Segoe WP'), url('SegoeWP.woff') format('woff');
+  src: local('Segoe WP'), url('assets/SegoeWP.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Asap';
   font-style: normal;
   font-weight: normal;
-  src: url('Asap-Regular.otf') format('otf');
+  src: url('assets/Asap-Regular.otf') format('otf');
 }
 
 @font-face {
@@ -112,11 +112,13 @@
 
 .navigation li:nth-child(2) {
   width: 132px;
+  padding-right: 4px;
 }
 
 .navigation li:last-child {
   width: 147px;
   border: 0;
+  padding-right: 4px;
 }
 
 .navigation li a {
@@ -173,9 +175,7 @@
   fill: #ffffff;
 }
 
-.slider-title-main {
-  color: #f5c506;
-}
+
 
 .wrapper {
   display: flex;
@@ -202,9 +202,14 @@
 .title-slider {
   font-family: "Asap", sans-serif;
   display: block;
-  text-align: center;
   padding: 0px 15px 30px 0px;
   line-height: 75px;
+}
+
+.slider-title-main {
+  color: #f5c506;
+  padding-left: 40px;
+  letter-spacing: -1px
 }
 
 .features {
@@ -225,7 +230,7 @@
 .features-item {
   display: inline-block;
   text-align: center;
-  padding: 61px 7px 0px 0px;
+  
   border-left: 1px solid #d3d3d3;
   width: 340px;
   height: 212px;
@@ -233,13 +238,37 @@
   font-size: 27px;
   letter-spacing: 0px;
   text-transform: uppercase;
-  line-height: 37px;
 }
 
-.features-item p {
-  padding: 1px 0px 0px 26px;
+.features-item:first-child p {
+  padding: 1px 0px 0px 23px;
+}
+
+.features-item:nth-child(2) p {
+  padding: 0px 2px 0px 0px;
+}
+
+
+.features-item:last-child p {
+  padding: 0px 0px 0px 5px;
+}
+
+
+.features-item:first-child {
+  padding: 61px 6px 0px 0px;
+  line-height: 37px;
+  letter-spacing: 0.3px;
+}
+.features-item:nth-child(2) {
+  padding: 37px 0px 0px 22px;
+  line-height: 42px;
+  letter-spacing: 0.3px;
+
 }
 
 .features-item:last-child {
+ padding: 54px 20px 0px 0px;
+ line-height: 37px;
+ letter-spacing: 0.3px;
   border-right: 1px solid #d3d3d3;
 }
